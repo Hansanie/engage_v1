@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./index.module.css";
 import { IoMdCall } from "react-icons/io";
-import NavBarMobile from "../NavBarMobile";
 
 interface InavItem {
   name: string;
@@ -51,7 +50,7 @@ const NavBar = () => {
           <div className={styles.calmDiv}>
             Connect, Support, Thrive Together
           </div>
-          {/* <div className={styles.emptyDiv}></div> */}
+          <div></div>
         </div>
         <div className={styles.lowerDiv}>
           <div className={styles.leftDiv}>
@@ -75,9 +74,6 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        {/* <div className={styles.mobileLowerDiv}> */}
-        <NavBarMobile />
-        {/* </div> */}
       </div>
     </div>
   );

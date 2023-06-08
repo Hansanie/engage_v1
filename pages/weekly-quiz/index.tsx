@@ -1,31 +1,31 @@
-
 import React from 'react'
 import type { Page } from "../../tsc-types/next";
-import Header from '@/components/LoginPages/Header';
-import LoginForm from '@/components/LoginPages/LoginForm';
+import Header from '@/components/Quizes/Header';
 import Head from 'next/head';
+import SubHeader from '@/components/Quizes/SubHeader';
+import WeeklyQuizQuestions from '@/components/Quizes/WeeklyQuiz/WeeklyQuizQuestions';
   // Props type
   type Props = {
     Component: Page;
   };
 
-  export default function Login() {
+  export default function WeeklyQuiz() {
     return (
       <>
         <Head>
-          <title>Engage Login</title>
+          <title>Engage Weekly Quiz</title>
           <meta name="description" content="" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className="bg-color min-h-screen">
-          <Header subTopic="Welcome to Engage" />
-          <LoginForm />
+          <Header/>
+          <WeeklyQuizQuestions/>
         </main>
       </>
     );
   }
 
-Login.getLayout = function pageLayout(page: Props) {
+  WeeklyQuiz.getLayout = function pageLayout(page: Props) {
     return <>{page}</>;
   };

@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./index.module.css";
+import Image from "next/image";
 import { IstepDetails } from "@/tsc-types/stepTypes";
 
 interface prop {

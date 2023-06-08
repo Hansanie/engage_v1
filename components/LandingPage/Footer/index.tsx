@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
+import styles from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./index.module.css";
-import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -17,7 +17,6 @@ const Footer = () => {
                 alt="logo"
                 width={150}
                 height={90}
-                className={styles.logo}
               />
             </Link>
           </div>
@@ -55,4 +54,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer
