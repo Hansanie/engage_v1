@@ -1,0 +1,44 @@
+.mainDivContainer,
+.mainDivContainerReversed {
+    width: 100%;
+    display: flex;
+}
+
+.mainDivContainerReversed {
+    flex-direction: row-reverse;
+}
+
+.mainDiv,
+.mainDivReversed {
+    padding: 15px 30px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.mainDiv {
+    background-color: var(--light-grey);
+    margin: 10px 0 10px 50px;
+}
+
+.mainDiv div {
+    color: var(--black);
+}
+
+.mainDivReversed {
+    background-color: var(--black);
+    color: var(--light-grey);
+    margin: 10px 50px 10px 0px;
+}
+
+@media (min-width: 600px) {
+    .mainDiv {
+        margin-left: 100px;
+    }
+    .mainDivReversed {
+        margin-right: 100px;
+    }
+}
+
+.mainDivReversed div {
+    color: var(--light-grey);
+}
