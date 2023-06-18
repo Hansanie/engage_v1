@@ -2,7 +2,6 @@ import React from 'react'
 import type { Page } from "../../tsc-types/next";
 import Header from '@/components/Quizes/Header';
 import Head from 'next/head';
-import SubHeader from '@/components/Quizes/SubHeader';
 import WeeklyQuizQuestions from '@/components/Quizes/WeeklyQuiz/WeeklyQuizQuestions';
   // Props type
   type Props = {
