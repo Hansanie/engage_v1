@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Sidebar from "@/components/Sidebar";
 import type { Page } from "../tsc-types/next";
 
 import { Montserrat } from "next/font/google";
+import Layout from "@/components/Layout";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -22,10 +22,10 @@ export default function App({ Component, pageProps }: Props) {
     return Component.getLayout(<Component {...pageProps} />);
   }
   return (
-    <Sidebar>
+    <Layout>
       <main className={montserrat.className}>
         <Component {...pageProps} />
       </main>
-    </Sidebar>
+    </Layout>
   );
 }
